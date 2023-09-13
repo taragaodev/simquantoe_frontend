@@ -1,7 +1,9 @@
 {
-  "expo": {   
+  "expo": {
     "jsEngine": "hermes",
-    "plugins": ["expo-image-picker"],
+    "plugins": [
+      "expo-image-picker"
+    ],
     "name": "supermarket",
     "slug": "supermarket",
     "version": "1.0.0",
@@ -17,17 +19,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.slumdev.supermarket"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.slumdev.supermarket"
+      "package": "com.slumdev.supermarket",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7604e180-4052-4b80-8458-6936075fc3e1"
+      }
+    },
+    "owner": "slumdev"
   }
 }
