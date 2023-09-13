@@ -1,5 +1,7 @@
 {
-  "expo": {
+  "expo": {   
+    "jsEngine": "hermes",
+    "plugins": ["expo-image-picker"],
     "name": "supermarket",
     "slug": "supermarket",
     "version": "1.0.0",
@@ -21,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.slumdev.supermarket"
     },
     "web": {
       "favicon": "./assets/favicon.png"
